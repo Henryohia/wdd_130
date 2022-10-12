@@ -1,4 +1,4 @@
-#content-div {
+#content {
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -58,7 +58,6 @@ nav a:hover {
 }
 
 footer p {
-    background-color: #6B4D57;
     color: #3C787E;
     font-size: 1.2em;
 }
@@ -81,6 +80,7 @@ h4 {
 }
 
 footer {
+    background-color: #6B4D57;
     color: #3C787E;
 }
 
