@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 .msg {
-    background-color: #3C787E;
+    background-color: #6B4D57;
     line-height: 1.5em;
     padding: 35px;
 }
@@ -165,7 +165,7 @@ footer .social img {
     opacity: .6;
     transform: scale(1.1);
 }
-.rivers-card, .camping-card, .rapids-cards {
+.rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 } 
 
@@ -218,7 +218,7 @@ nav {
     grid-row: 2/3;
 }
 
-.rapids-cards {
+.rapids-card {
     grid-column: 8/10;
     grid-row: 2/3;
 }
