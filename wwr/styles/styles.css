@@ -3,7 +3,7 @@
 
 :root {
     --body-font: "Arial", "Times New Roman", "Courier New";
-    --headline-font: "Courier New", "Verdana", "Tahoma", "Georgia ";
+    --headline-font: "Tahoma", "Courier New", "Verdana", "Georgia ";
 }
 
 #content {
