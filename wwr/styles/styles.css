@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 
 :root {
-    --body-font: "Arial", "Times New Roman", "Courier New";
-    --headline-font: "Tahoma", "Courier New", "Verdana", "Georgia ";
+    --body-font: "Arial", "Times New Roman", sans-serif;
+    --headline-font: "Tahoma", "Verdana", sans-serif;
 }
 
 #content {
