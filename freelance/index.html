@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Smart Service Freelance Company | Home Page</title>
+    <link rel="stylesheet" href="styles/styles.css" >
   </head>
   <body>
     <div class="content">
@@ -19,15 +20,46 @@
               <a href="contactus.html">Contact Us</a>
             </nav>
           </header>
-          <main>
-            <div class="slider">
-              <img src="images/image2.jpg" alt="image for homepage" >
-              <img src="images/image3.jpg" alt="image for homepage" >
-              <img src="images/image5.avif" alt="image for homepage" >
-              <img src="images/image4.jpg" alt="image for homepage" >
+          <main class="home-grid">
+            <div class="slideshow-container">
+              <div class="title"><h1>SMART SERVICE FREELANCE COMPANY</h1></div>
+              <div class="mySlides">
+                <div class="number-text">1 / 4</div>
+                <img src="images/image2.jpg" alt="image for homepage" >
+                <div class="text">Reach Out Now</div>
+              </div>
+              <div class="mySlides">
+                <div class="number-text">2 / 4</div>
+                <img src="images/image3.jpg" alt="image for homepage" >
+                <div class="text">How Can We Serve You?</div>
+              </div>
+              <div class="mySlides">
+                <div class="number-text">3 / 4</div>
+                <img src="images/image5.avif" alt="image for homepage" >
+                <div class="text">Are You Looking For High Standards? </div>
+              </div>
+              <div class="mySlides">
+                <div class="number-text">4 / 4</div>
+                <img src="images/image4.jpg" alt="image for homepage" >
+                <div class="text">We Make The World A Better Place</div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
             </div>
-            <section class="hp-section">
-              <h1>Smart Service Freelance Company</h1>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            
+            <img class="img1"
+            src="images/wireless_network_installation_guy.jpg"
+            alt="image for homepage"
+            >
+            <section class="hp-section1">
+              <!-- <h1>Smart Service Freelance Company</h1> -->
               <h2>
                 Standards Of Living Made Better With Smart Service Freelance Company
               </h2>
@@ -44,7 +76,8 @@
                 our community.
               </p>
             </section>
-            <section class="hp-section">
+            <img class="img2" src="images/image1.jpg" alt="image for homepage" >
+            <section class="hp-section2">
               <h3>People Want To Be Entertained</h3>
               <p>
                 Whether that was your original intention in coming to the site or not,
@@ -53,7 +86,7 @@
                 are offering.
               </p>
             </section>
-            <section class="hp-section">
+            <section class="hp-section3">
               <h3>People Want TO Be Part Of Our Community</h3>
               <p>
                 We know a lot of us want to be part of something and stand for something
@@ -62,12 +95,9 @@
                 purchased or serviced from us.
               </p>
             </section>
-            <img
-              src="images/wireless_network_installation_guy.jpg"
-              alt="image for homepage"
-            >
-            <img src="images/image1.jpg" alt="image for homepage" >
-            <img
+
+
+            <img class="img3"
               src="images/istockphoto-1267057581-612x612.jpg"
               alt="image for homepage"
             >
@@ -91,5 +121,34 @@
             </div>
           </footer>
     </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
   </body>
 </html>
